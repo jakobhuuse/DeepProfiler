@@ -1,0 +1,9 @@
+# Keep the build context to the package source needed by `pip install .`.
+# Everything else (git history, large example data, tests, caches) is excluded
+# so the image builds small and setuptools-scm uses SETUPTOOLS_SCM_PRETEND_VERSION.
+*
+
+!deepprofiler/
+!pyproject.toml
+!README.md
+!LICENSE.md
